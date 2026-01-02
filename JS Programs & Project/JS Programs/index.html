@@ -1,0 +1,80 @@
+4. Simple Countdown Timer 5. Reverse a String 6. Multiplication Table 7. Check if a Number is Prime Form
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //1.Even or Odd
+        let num = 10;
+        console.log(num%2==0?"Even":Odd);
+
+        //2.Largest of three numbers
+        let num1 = 15;
+        let num2 = 10;
+        let num3 = 6;
+        let result;
+        if(num1>num2 && num1>num3){
+            result = num1;
+        }
+        else if(num2>num1 && num2>num3){
+            result = num2;
+        }
+        else{
+            result = num3;
+        }
+        console.log(`Largest no. is ${result}`);
+
+        //3.Factorial of a number
+        let tobefact = 5;
+        let fact = 1;
+        for(let i=1;i<=tobefact;i++){
+            fact *= i;
+        }
+        console.log(fact);
+
+        //4.Simple Countdown timer
+        let count = 1;
+        let timer = setInterval(() => {console.log(count);
+            count++;
+            if(count>10){
+                console.log("Countdown Finished");
+                clearInterval(timer);
+            }
+        },1000);
+
+        //5.Reverse a String
+        let str = "Hello";
+        let result1 = "";
+        for(let i=str.length-1;i>=0;i--){
+            result1 += str.charAt(i);
+        }
+        console.log(result1);
+
+        //6.Multiplication table
+        const mul = 9;
+        for(let i=1;i<=10;i++){
+            console.log(`${mul} * ${i} = ${mul*i}`);
+        }
+
+        //7.Prime no. or Not
+        function primeOrNot(no){
+            for(let i=2;i<no/2;i++){
+                if(no%i===0){
+                    return "Not Prime";
+                }
+            }
+            return "Prime";
+        }
+        console.log(primeOrNot(7));
+
+
+
+
+    </script>
+</body>
+</html>

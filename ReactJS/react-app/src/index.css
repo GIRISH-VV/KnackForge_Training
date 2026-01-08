@@ -7,7 +7,7 @@
   display: inline-block;
   margin: 10px;
   width: 200px;
-  
+  height: auto;
 }
 .card img{
   width: 200px;
@@ -16,4 +16,28 @@
 }
 h3,p{
   text-align: center;
+}
+.card button{
+  background-color: rgb(79, 249, 79);
+  font-weight: bold;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;  
+  padding: 0px 6px;
+  margin-right: 10px;
+}
+.btn1{
+  margin-left: 25px;
+}
+.card button.delete{
+  background-color: black;
+  color: white;
+  margin: 10px 25%;
+  width: 100px;
+
+}
+.card p{
+  font-size: 15px;
+  font-style: italic;
 }

@@ -1,0 +1,38 @@
+.container {
+  width: 740px;
+  margin: auto;
+  margin-top: 200px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f2f2f2;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+li.correct {
+  background-color: #4caf50;
+  color: white;
+}
+
+li.wrong {
+  background-color: #f44336;
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}

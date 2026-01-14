@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    width: 100%;
+    background-color: rgb(167, 97, 234);
+    height: 80px;
+}
+nav h1{
+    margin: 16px 25px;
+}
+ul{
+    display: flex;
+    margin-left: 1400px;
+    text-align: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;  
+    font-size: 26px;
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+h1{
+    display: flex;
+    margin-top: 380px;
+    justify-content: center;
+}

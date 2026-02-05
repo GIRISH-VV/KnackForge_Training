@@ -1,0 +1,130 @@
+/* Page background (optional) */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Login card */
+.login {
+  width: 350px;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Heading */
+.login h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Inputs */
+.login input {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.login input:focus {
+  border-color: #667eea;
+}
+
+/* Button */
+.login button {
+  padding: 12px;
+  background: #667eea;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login button:hover {
+  background: #5a67d8;
+}
+
+/* Error message */
+.error {
+  margin-top: 10px;
+  color: #e53e3e;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+/* Page container */
+.page {
+  width: 380px;
+  margin: 80px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Title */
+.page h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Inputs & select */
+.page input,
+.page select {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+/* Focus state */
+.page input:focus,
+.page select:focus {
+  border-color: #667eea;
+}
+
+/* Select arrow fix */
+.page select {
+  cursor: pointer;
+  background-color: #fff;
+}
+
+/* Save button */
+.page button {
+  padding: 12px;
+  background: #38a169;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.page button:hover {
+  background: #2f855a;
+}

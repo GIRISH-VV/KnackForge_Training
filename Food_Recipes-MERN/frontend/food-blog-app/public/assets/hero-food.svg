@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640" fill="none">
+  <defs>
+    <linearGradient id="bowl" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4d2b20"/>
+      <stop offset="100%" stop-color="#2f1b14"/>
+    </linearGradient>
+    <radialGradient id="rice" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#fff7e6"/>
+      <stop offset="100%" stop-color="#f0dcc7"/>
+    </radialGradient>
+  </defs>
+  <circle cx="320" cy="320" r="250" fill="url(#bowl)"/>
+  <circle cx="320" cy="320" r="220" fill="url(#rice)"/>
+  <g>
+    <circle cx="220" cy="230" r="20" fill="#eb6a3d"/>
+    <circle cx="275" cy="215" r="16" fill="#62b85a"/>
+    <circle cx="355" cy="240" r="19" fill="#f2a527"/>
+    <circle cx="415" cy="220" r="17" fill="#ea5545"/>
+    <circle cx="250" cy="305" r="18" fill="#60b64e"/>
+    <circle cx="390" cy="315" r="20" fill="#f08a3f"/>
+    <circle cx="310" cy="370" r="24" fill="#66b95d"/>
+    <circle cx="220" cy="390" r="16" fill="#f39f45"/>
+    <circle cx="410" cy="395" r="18" fill="#ea5545"/>
+  </g>
+</svg>

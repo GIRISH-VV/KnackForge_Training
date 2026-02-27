@@ -67,6 +67,7 @@ const App = () => {
 
   const search = async () => {
     setLoading(true)
+    setCityNotFound(false)
     const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${text}&appid=${apiKey}&units=metric`
 
@@ -76,7 +77,6 @@ const App = () => {
       
       if (data.cod === 404 || data.cod === 401) {
         setCityNotFound(true)
-        setLoading(false)
         return
       }
       setIcon(
@@ -125,15 +125,19 @@ const App = () => {
             <img src={searchIcon} alt="Search" onClick={search} />
           </div> 
         </div>
-        <WeatherDetails icon={icon} 
-          temp={temp} 
-          city={city} 
-          country={country} 
-          lat= {lat}
-          long={long}
-          humidity={humidity}
-          wind={wind}
-        />
+        {loading && <p>Loading...</p>}
+        {cityNotFound && !loading && <p>City not found</p>}
+        {!loading && !cityNotFound && (
+          <WeatherDetails icon={icon} 
+            temp={temp} 
+            city={city} 
+            country={country} 
+            lat= {lat}
+            long={long}
+            humidity={humidity}
+            wind={wind}
+          />
+        )}
         <p className="copyright">
           Designed by <span>Girish</span>
         </p>
